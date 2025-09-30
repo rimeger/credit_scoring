@@ -15,7 +15,7 @@ Repository includes scripts to train a model, a saved model artifact, and a ligh
 To copy bad run project follow these instructions
 
 ```powershell
-git clone 
+git clone https://github.com/rimeger/credit_scoring
 
 docker-compose up --build
 ```
