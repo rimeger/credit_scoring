@@ -8,6 +8,19 @@ A small credit scoring project containing data, training code and a minimal infe
 
 Main goal is to make predictions on minimal data listed on screenshot.
 
+**Model and Performance:**
+
+* Best Model: XGBoost
+
+* Test Recall: 0.6933
+
+* Test Precision: 0.1398
+
+* Denied Rate: 57%
+
+Notes on Performance:
+The metrics indicate that the model prioritizes recall, meaning it identifies a high proportion of actual positives (e.g., risky credit applications) but at the cost of low precision, resulting in many false positives. These results are expected given the minimal size of the dataset and limited feature set, which constrain the model’s predictive capability. Despite these limitations, the project demonstrates an end-to-end workflow from data ingestion to inference, providing a foundation for further improvements with more data.
+
 Repository includes scripts to train a model, a saved model artifact, and a lightweight service to score new examples.
 
 ## Quick Start
