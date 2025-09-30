@@ -1,0 +1,19 @@
+version: "3.9"
+services:
+  service:
+    build:
+      context: .
+      dockerfile: service/Dockerfile
+    container_name: credit-card-service
+    ports:
+      - "7000:7000"
+
+  app:
+    build:
+      context: .
+      dockerfile: app/Dockerfile
+    container_name: credit-card-app
+    ports:
+      - "7001:7001"
+    depends_on:
+      - service
